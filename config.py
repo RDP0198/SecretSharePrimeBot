@@ -3,14 +3,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+import os
+
 API_ID = int(os.getenv("API_ID", "0"))
 API_HASH = os.getenv("API_HASH", "")
-
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/secret_share_bot_default_db")
-
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))
+
+MONGO_URI = os.getenv("mongodb+srv://pifowo6717_db_user:pifowo6717_db_user@cluster0.9j5ea8r.mongodb.net/?appName=Cluster0")
 
 FREE_TIER_MAX_FILE_SIZE_MB = int(os.getenv("FREE_TIER_MAX_FILE_SIZE_MB", 1024))
 FREE_TIER_DEFAULT_EXPIRY_HOURS = int(os.getenv("FREE_TIER_DEFAULT_EXPIRY_HOURS", 87600))
